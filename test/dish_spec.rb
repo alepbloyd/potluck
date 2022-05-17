@@ -15,4 +15,10 @@ RSpec.describe Dish do
     expect(new_dish.name).to eq("Couscous Salad")
   end
 
+  it 'returns dish category with .category' do
+    new_dish = Dish.new("Couscous Salad", :appetizer)
+
+    expect(new_dish.category).to eq(:appetizer)
+  end
+
 end
